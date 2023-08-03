@@ -1,8 +1,10 @@
 [user]
   name = Vincent Klingemann
   email = 56515214+samlitt@users.noreply.github.com
+
+[includeIf "gitdir:~/Development/Github/work/NORD-LB/"]
+  path = ~/Development/Github/work/NORD-LB/.gitconfig
 [core]
-  editor = vi
   exludesfile = ~/.gitignore
   autocrlf = input
 [color]
@@ -26,3 +28,8 @@
   d = diff
   dc = diff -cached
   l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
+[filter "lfs"]
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
