@@ -96,7 +96,7 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # Screen                                                                      #
 ###############################################################################
 
-# Save screenshots to Downloads folder.
+# Save screenshots to Documents folder.
 defaults write com.apple.screencapture location -string "${HOME}/Documents/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
@@ -179,7 +179,7 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock magnification -bool false
 
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 45
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.15
