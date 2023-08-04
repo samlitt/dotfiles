@@ -12,6 +12,7 @@ export MAYA_LOCATION="/Applications/Autodesk/maya2020";
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 
+export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
 
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
